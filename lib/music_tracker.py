@@ -6,4 +6,4 @@ class MusicTracker:
         return self.tracks.append(track)
 
     def list_tracks(self):
-        return self.tracks
+        return [track.get_track() for track in self.tracks]
